@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-us{
+    background-image: url(../img/Rectangle.png);
+    display: flex;
+    justify-content: center;   
+    color: #FFFFFF;
+    padding: 135 px 0;
+}
+
+.head{
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+}
+
+.paragraf{
+    margin: 60px 0;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+}
+.icon{
+    margin: 60px 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.user{
+    margin: 60px 0;
+    display: flex;
+    gap: 30px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.user input, #massage{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    color: #FFFFFF;
+}
+
+#massage{
+    resize: none;
+    width: 100%;
+}
