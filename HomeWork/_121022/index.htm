@@ -5,20 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="contact_us">
-        <div class="contact-form"></div>
+        <div class="contact-form">
         <h2 class="head">Contact us</h2>
-        <p class="text">We’re here to help! Send us your query via the form below or send us an email at helpdesk@gstudio.com for any issue you’re facing </p>
+        <br>
+        <p class="text">We’re here to help! Send us your query via the form below or send us an email at <a href="helpdesk@gstudio.com">helpdesk@gstudio.com</a>  for any issue you’re facing </p>
+        <br>
         <form name="contact-form" id="form">
             <label for="Name">Name</label>
-            <input type="text" name="name" placeholder="|"> <br>
+            <input type="text" name="name" placeholder="|"> 
+            <br>
             <input type="email" name="email" id="" placeholder="Email">
-            <textarea name="Massage" id="massage"></textarea>
+            <br>
+            <textarea name="Massage" id="massage" rows="12" placeholder="Type your message here"></textarea>
+            <div class="sub">
+                <input type="submit" id="sub" value="Submit"></div>
         </form>
-
+    </div>
         <div class="contact-image"><img class="img" src="img/Tech support call on the computer.png" alt=""></div>
  
     </section>
