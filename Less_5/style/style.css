@@ -1,0 +1,41 @@
+.parrent{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: bisque;
+}
+
+.div-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    z-index: 10;
+}
+.div-2{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(185, 255, 127);
+}
+.div-3{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(127, 182, 255);
+    z-index: 10;
+}
+.div-4{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(234, 127, 255);
+}
