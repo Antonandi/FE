@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr ={
+            ru:['голубой','красный','зеленый'],
+            en:['blue','red','green']
+        }
+        console.log(arr.ru[0])
+
+        let obj = {
+            Коля:200,
+            Вася:300,
+            Петя:400,
+        }
+        for (let key in obj) {
+        }
+            console.log('Коля '+'зарплата - ' +obj.Коля + ' долларов');
+            console.log('Вася '+'зарплата - ' +obj.Вася + ' долларов');
+            console.log('Петя '+'зарплата - ' +obj.Петя + ' долларов');
+
+        let js =
+        {js:['jQuery', 'Angular'], php: 'hello', css: 'world'}
+        console.log(js.js[0]);
+
+        let days ={
+            ru:['Пн','Вт','Ср','Чт','Пт','Сб','Вс'],
+            en:['Mo','Tu','We','Th','Fr','Sa','Su']
+        }
+        console.log(days.ru[0], days.en[2])
+
+        const day ={
+            n1:'Mo',
+            n2:'Tu',
+            n3:'We',
+            n4:'Th',
+            n5:'Fr',
+            n6:'Sa',
+            n7:'Su',
+        }
+        console.log(day.n2)
+    </script>
+</body>
+</html>

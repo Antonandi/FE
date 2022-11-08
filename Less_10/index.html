@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let sum = 0;
+        // let titleAll=[];
+        const cheapProducts = [];
+        const products = [
+        
+  {
+    title: "Nike",
+    price: 300,
+    type: "shoe",
+    count: 5,
+  },
+  {
+    title: "Puma",
+    price: 600,
+    type: "shoe",
+    count: 25,
+  },
+  {
+    title: "Chanel",
+    price: 1200,
+    type: "bag",
+    count: 40,
+  },
+  {
+    title: "BMW",
+    price: 7000,
+    type: "car",
+    count: 15.
+  },
+]
+
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price < 1000){
+        cheapProducts.push(products[i]);
+        
+    }
+    }
+    console.log(cheapProducts)
+    // for (let i = 0; i < products.length; i++) {
+    //     let{type, title, count,price} = products[i];
+    //     if(price < 1000)
+    //     cheapProducts.push(products[i])
+    //     console.log(cheapProducts)
+    // }
+  
+    </script>
+</body>
+</html>

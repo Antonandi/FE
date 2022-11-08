@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+        :root{
+            --menu-width: 250px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        menu{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--menu-width);
+            height: 100%;
+            background: gold;
+            transform: translateX(var calc(var(--menu-width)*-1));
+            transition: all 0.7s;
+        }
+        menu.is-open{
+            transform: translateX(0);
+        }
+    </style>
+    <script>
+        function toggleMenu(){
+            const menu = document.querySelector('menu');
+            menu.classList.toggle('is-open');
+        }
+      let radius = prompt('r?')
+      alert(Math.PI*radius**2)
+
+      let s1 = prompt('s?')
+      alert(s1**2)
+    </script>
+  
+</head>
+
+<body>
+   <menu></menu>
+    <div>
+    <h1>
+        About
+    </h1>
+    <button onclick="toggleMenu()">Menu</button>
+</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ducimus nisi necessitatibus omnis, soluta, placeat et velit ab cum fuga aliquid sequi laudantium? Aliquam corrupti, doloremque eius totam provident harum.</p>
+
+
+
+</body>
+
+</html>
