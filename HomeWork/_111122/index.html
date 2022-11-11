@@ -8,58 +8,52 @@
 </head>
 <body>
     <script>
-        function crArr(num,String){
-            let arr =[];
-            for (let index = 0; index < num; index++) {
-                arr.push(String);
-            }
-            return arr;
-        }
-        console.log(crArr(3,"dog"));
+        // function crArr(num,String){
+        //     let arr =[];
+        //     for (let index = 0; index < num; index++) {
+        //         arr.push(String);
+        //     }
+        //     return arr;
+        // }
+        // console.log(crArr(3,"dog"));
 
-        function crObj(num,String){
-            let obj ={};
-            for (let index = 0; index < num; index++) {
-                obj[index]=String + index;
-            }
-            return obj;
-        }
-        console.log(crObj(3,"dog"));
+        // function crObj(num,String){
+        //     let obj ={};
+        //     for (let index = 0; index < num; index++) {
+        //         obj[index]=String + index;
+        //     }
+        //     return obj;
+        // }
+        // console.log(crObj(3,"dog"));
 
         let array =[3,8,5,6];
-        let sumEven=0;
-        let sumNoEven=0;
-        let result=0;
+        
         function sumArrEven(array){
+            let sumEven=0;
             for (let index = 0; index < array.length; index++) {
-                if (array[index] %2===0){
-                    sumEven += array[index];
-                }
+                if (array[index] %2===0) sumEven += array[index];
             }
             return sumEven;
         }
 
         function sumArrNoEven(array){
+            let sumNoEven=0;
             for (let index = 0; index < array.length; index++) {
-                if (array[index] %2===0+1){
-                    sumNoEven += array[index];
-                }
+                if (array[index] %2!==0) sumNoEven += array[index];
             }
             return sumNoEven;
         }
 
         function sumArr(num1,num2){
             if(num1 > num2){
-                return result = num1;
+                return num1;
             }else{
-                return result = num2;
+                return num2;
             }
         }
         console.log(sumArrEven(array));
         console.log(sumArrNoEven(array));
-        console.log(sumEven);
-        console.log(sumNoEven);
-        console.log(sumArr(sumEven,sumNoEven));
+        console.log(sumArr(sumArrEven(array),sumArrNoEven(array)));
 
 
     </script>
